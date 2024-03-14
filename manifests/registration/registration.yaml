@@ -23,6 +23,8 @@ spec:
         device: /dev/vda
         debug: true
         config-dir: /etc/elemental
+      registration:
+        emulate-tpm: true
   machineInventoryLabels:
     cores: "${System Data/CPU/Total Cores}"
     memory: "${System Data/Memory/Total Physical Bytes}"
