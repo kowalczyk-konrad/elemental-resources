@@ -20,7 +20,7 @@ spec:
     elemental:
       install:
         reboot: true
-        device: /dev/vda
+        device: /dev/sda
         debug: true
         config-dir: /etc/elemental
       registration:
