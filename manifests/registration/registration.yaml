@@ -1,7 +1,7 @@
 apiVersion: elemental.cattle.io/v1beta1
 kind: MachineRegistration
 metadata:
-  name: fireKK
+  name: firekk
   namespace: fleet-default
 spec:
   config:
@@ -28,4 +28,4 @@ spec:
   machineInventoryLabels:
     cores: "${System Data/CPU/Total Cores}"
     memory: "${System Data/Memory/Total Physical Bytes}"
-    registration: fireKK
+    registration: firekk
