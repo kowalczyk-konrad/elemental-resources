@@ -1,10 +1,10 @@
 apiVersion: elemental.cattle.io/v1beta1
 kind: SeedImage
 metadata:
-  name: firekk
+  name: starter01
   namespace: fleet-default
 spec:
-  baseImage: https://updates.suse.com/SUSE/Updates/ElementalTeal/5.3/x86_64/update/iso/elemental-teal.x86_64-1.1.4-Build3.2.30.iso
+  baseImage: https://download.opensuse.org/distribution/leap-micro/5.5/appliances/iso/openSUSE-Leap-Micro.x86_64-5.5.0-Default-SelfInstall-Build34.31.install.iso
   cloud-config:
     write_files:
       - content: |
@@ -17,5 +17,5 @@ spec:
   registrationRef:
     apiVersion: elemental.cattle.io/v1beta1
     kind: MachineRegistration
-    name: firekk
+    name: starter01
     namespace: fleet-default
