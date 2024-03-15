@@ -4,7 +4,7 @@ metadata:
   name: starter01
   namespace: fleet-local
 spec:
-  baseImage: https://download.opensuse.org/distribution/leap-micro/5.5/appliances/iso/openSUSE-Leap-Micro.x86_64-5.5.0-Default-SelfInstall-Build34.31.install.iso
+  baseImage: https://download.opensuse.org/distribution/leap/15.5/iso/openSUSE-Leap-15.5-DVD-x86_64-Build491.1-Media.iso
   cloud-config:
     write_files:
       - content: |
