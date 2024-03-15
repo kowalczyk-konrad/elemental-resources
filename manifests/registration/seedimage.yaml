@@ -2,7 +2,7 @@ apiVersion: elemental.cattle.io/v1beta1
 kind: SeedImage
 metadata:
   name: starter01
-  namespace: fleet-default
+  namespace: fleet-local
 spec:
   baseImage: https://download.opensuse.org/distribution/leap-micro/5.5/appliances/iso/openSUSE-Leap-Micro.x86_64-5.5.0-Default-SelfInstall-Build34.31.install.iso
   cloud-config:
@@ -18,4 +18,4 @@ spec:
     apiVersion: elemental.cattle.io/v1beta1
     kind: MachineRegistration
     name: starter01
-    namespace: fleet-default
+    namespace: fleet-local

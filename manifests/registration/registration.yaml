@@ -2,7 +2,7 @@ apiVersion: elemental.cattle.io/v1beta1
 kind: MachineRegistration
 metadata:
   name: starter01
-  namespace: fleet-default
+  namespace: fleet-local
 spec:
   config:
     cloud-config:
