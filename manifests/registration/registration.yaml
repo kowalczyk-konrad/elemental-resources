@@ -6,9 +6,20 @@ metadata:
 spec:
   config:
     cloud-config:
+      manage_etc_hosts: true
       users:
       - name: root
         passwd: "$6$rounds=4096$cKTGpA.42l0cYct2$jaKlyfu2SDevJ5/HeslSiLPttSTS0C/gku/jZ2Y2AGdsPIxjzmHF5mC5iZexXfHZ3rQC1MQeRNl22JR.fZ/lQ0"
+      - name: bms
+        groups: users, wheel
+        sudo: ['ALL=(ALL) NOPASSWD:ALL']
+        ssh-authorized-keys:
+          - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEultjv4pCf8QoC7flXkMvEg0uBi0GJxXhWwEB6gyvwk konrad@dell-28
+      package_update: true
+      package_upgrade: true
+      packages:
+        - zypper
+        - open-vm-tools
       write_files:
       - content: |
           OPTION1="yes"

@@ -4,7 +4,7 @@ metadata:
   name: starter01
   namespace: fleet-local
 spec:
-  baseImage: https://releases.ubuntu.com/22.04.4/ubuntu-22.04.4-live-server-amd64.iso
+  baseImage: https://download.opensuse.org/tumbleweed/iso/openSUSE-MicroOS-DVD-x86_64-Current.iso
   cloud-config:
     write_files:
       - content: |
