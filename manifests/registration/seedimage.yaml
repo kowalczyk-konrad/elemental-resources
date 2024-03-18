@@ -1,10 +1,10 @@
 apiVersion: elemental.cattle.io/v1beta1
 kind: SeedImage
 metadata:
-  name: starter01
+  name: starter02
   namespace: fleet-local
 spec:
-  baseImage: https://download.opensuse.org/tumbleweed/iso/openSUSE-MicroOS-DVD-x86_64-Current.iso
+  baseImage: https://download.opensuse.org/tumbleweed/appliances/iso/openSUSE-MicroOS.x86_64-ContainerHost-SelfInstall.iso
   cloud-config:
     write_files:
       - content: |
