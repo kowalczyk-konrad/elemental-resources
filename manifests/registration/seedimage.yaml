@@ -1,10 +1,10 @@
 apiVersion: elemental.cattle.io/v1beta1
 kind: SeedImage
 metadata:
-  name: starter03
+  name: starter04
   namespace: fleet-local
 spec:
-  baseImage: http://172.16.1.240/elemental.iso
+  baseImage: http://172.16.1.240/Elemental-0.20240320.iso
   cloud-config:
     write_files:
       - content: |
