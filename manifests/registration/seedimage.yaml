@@ -17,5 +17,5 @@ spec:
   registrationRef:
     apiVersion: elemental.cattle.io/v1beta1
     kind: MachineRegistration
-    name: starter01
+    name: starter04
     namespace: fleet-local

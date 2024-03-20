@@ -1,7 +1,7 @@
 apiVersion: elemental.cattle.io/v1beta1
 kind: MachineRegistration
 metadata:
-  name: starter01
+  name: starter04
   namespace: fleet-local
 spec:
   config:
@@ -11,6 +11,7 @@ spec:
       - name: root
         passwd: "$6$rounds=4096$cKTGpA.42l0cYct2$jaKlyfu2SDevJ5/HeslSiLPttSTS0C/gku/jZ2Y2AGdsPIxjzmHF5mC5iZexXfHZ3rQC1MQeRNl22JR.fZ/lQ0"
       - name: bms
+        passwd: "$6$rounds=4096$cKTGpA.42l0cYct2$jaKlyfu2SDevJ5/HeslSiLPttSTS0C/gku/jZ2Y2AGdsPIxjzmHF5mC5iZexXfHZ3rQC1MQeRNl22JR.fZ/lQ0"
         groups: users, wheel
         sudo: ['ALL=(ALL) NOPASSWD:ALL']
         ssh-authorized-keys:
@@ -39,4 +40,4 @@ spec:
   machineInventoryLabels:
     cores: "${System Data/CPU/Total Cores}"
     memory: "${System Data/Memory/Total Physical Bytes}"
-    registration: starter01
+    registration: starter04
