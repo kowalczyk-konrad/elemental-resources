@@ -1,7 +1,7 @@
 apiVersion: elemental.cattle.io/v1beta1
 kind: MachineRegistration
 metadata:
-  name: starter04
+  name: starter05
   namespace: fleet-local
 spec:
   config:
@@ -40,4 +40,4 @@ spec:
   machineInventoryLabels:
     cores: "${System Data/CPU/Total Cores}"
     memory: "${System Data/Memory/Total Physical Bytes}"
-    registration: starter04
+    registration: starter05
