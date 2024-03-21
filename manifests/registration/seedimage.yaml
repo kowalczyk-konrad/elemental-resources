@@ -5,8 +5,8 @@ metadata:
   namespace: fleet-local
 spec:
   #baseImage: http://172.16.1.240/Elemental-0.20240320.iso
-  baseImage: https://download.opensuse.org/distribution/leap-micro/5.5/product/iso/openSUSE-Leap-Micro-5.5-DVD-x86_64-Build47.1-Media.iso
-#  baseImage: https://updates.suse.com/SUSE/Updates/ElementalTeal/5.3/x86_64/update/iso/elemental-teal.x86_64-1.1.4-Build3.2.30.iso
+#  baseImage: https://download.opensuse.org/distribution/leap-micro/5.5/product/iso/openSUSE-Leap-Micro-5.5-DVD-x86_64-Build47.1-Media.iso
+  baseImage: https://updates.suse.com/SUSE/Updates/ElementalTeal/5.3/x86_64/update/iso/elemental-teal.x86_64-1.1.4-Build3.2.30.iso
   cloud-config:
     write_files:
       - content: |
