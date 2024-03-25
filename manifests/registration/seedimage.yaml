@@ -1,12 +1,12 @@
 apiVersion: elemental.cattle.io/v1beta1
 kind: SeedImage
 metadata:
-  name: starter11
+  name: starter12
   namespace: fleet-local
 spec:
-  #baseImage: http://172.16.1.240/Elemental-0.20240320.iso
+  baseImage: http://172.16.1.240/elemental.iso
 #  baseImage: https://download.opensuse.org/tumbleweed/appliances/iso/openSUSE-MicroOS.x86_64-16.0.0-ContainerHost-SelfInstall-Snapshot20240319.install.iso
-  baseImage: https://updates.suse.com/SUSE/Updates/ElementalTeal/5.4/x86_64/update/iso/elemental-teal.x86_64-1.1.4-Build3.2.30.iso
+  #baseImage: https://updates.suse.com/SUSE/Updates/ElementalTeal/5.4/x86_64/update/iso/elemental-teal.x86_64-1.1.4-Build3.2.30.iso
   cloud-config:
     write_files:
       - content: |
